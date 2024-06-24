@@ -8,7 +8,7 @@ const snake = [
     { x: 130, y: 205 },
 ]
 
-let direction;
+let direction = "";
 
 const drawSnake = () => {
     ctx.fillStyle = "#4ec79e";
@@ -35,11 +35,11 @@ const moveSnake = () => {
     }
     
     if (direction == "up") {
-        snake.push({ x: head.x, y: head.y - 10})
+        snake.push({ x: head.x, y: head.y - size})
     }
     
     if (direction == "down") {
-        snake.push({ x: head.x - size, y: head.y + 10})
+        snake.push({ x: head.x, y: head.y + size})
     }
 
     snake.shift(); //remove o último elemento
