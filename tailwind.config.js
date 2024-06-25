@@ -12,6 +12,7 @@ module.exports = {
         'customGreen': '#43D9AD',
         'customLine': '#1E2D3D',
         'customWhite': '#E5E9F0',
+        'customOrange': '#FEA55F',
       },
       fontSize: {
         '62px': '3.88rem'

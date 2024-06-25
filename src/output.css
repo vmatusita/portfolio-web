@@ -938,6 +938,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -1396,6 +1400,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1800,6 +1808,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-e {
   border-inline-end-width: 1px;
 }
@@ -1852,6 +1864,11 @@ video {
 .border-customLine {
   --tw-border-opacity: 1;
   border-color: rgb(30 45 61 / var(--tw-border-opacity));
+}
+
+.border-customOrange {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 165 95 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2016,12 +2033,31 @@ video {
   padding: 1.75rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
 
-.pr-16 {
-  padding-right: 4rem;
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pr-36 {
+  padding-right: 9rem;
 }
 
 .pt-24 {
@@ -2603,6 +2639,33 @@ video {
   forced-color-adjust: none;
 }
 
+.hover-text {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .hover-text:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
+.custom-border-projects {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  border-bottom: 2px solid #FEA55F;
+  border-top: none;
+}
+
+.custom-border-contact {
+  border-left: 1px solid #1E2D3D;
+  border-right: none;
+  border-bottom: 2px solid #FEA55F;
+  border-top: none;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2664,6 +2727,35 @@ video {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:select-auto {
+    -webkit-user-select: auto;
+       -moz-user-select: auto;
+            user-select: auto;
+  }
+
+  .md\:border-none {
+    border-style: none;
+  }
+
+  .md\:bg-none {
+    background-image: none;
+  }
+
+  .md\:text-customGrey {
+    --tw-text-opacity: 1;
+    color: rgb(96 123 150 / var(--tw-text-opacity));
   }
 }
 

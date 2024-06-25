@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-text {
+    @apply md:hover:text-white transition-colors duration-100 ease-in-out;
+}
+
+.custom-border-projects {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  border-bottom: 2px solid #FEA55F; 
+  border-top: none; 
+}
+
+.custom-border-contact {
+  border-left: 1px solid #1E2D3D;
+  border-right: none; 
+  border-bottom: 2px solid #FEA55F; 
+  border-top: none; 
+}
