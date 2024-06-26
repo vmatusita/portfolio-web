@@ -7,6 +7,10 @@ let ulAboutDados = document.getElementById('ul-about-dados');
 let ulExperiencia = document.getElementById('ul-experiencias');
 let ulExperienciaIcon = document.getElementById('ul-experiencias-icon');
 let ulExperienciaDados = document.getElementById('ul-experiencias-dados');
+let biografia = document.getElementById('biografia');
+let tecnologias = document.getElementById('tecnologias');
+let formacao = document.getElementById('formacao');
+let kirei = document.getElementById('kirei');
 
 window.onload = function() {
     
@@ -29,6 +33,46 @@ window.onload = function() {
     ulExperiencia.addEventListener('click', function() {
         toggleMenu(ulExperienciaIcon, ulExperienciaDados);
     }); 
+
+    function loadContent(event) {
+        const section = event.currentTarget.getAttribute("data-section");
+        const contentSection = document.getElementById("content-section");
+    
+        document.querySelectorAll("#ul-about-dados .text-white").forEach(item => {
+            item.classList.remove('text-white');
+        });
+    
+        document.querySelectorAll("#ul-experiencias-dados .text-white").forEach(item => {
+            item.classList.remove('text-white');
+        });
+    
+        contentSection.innerHTML = "";
+    
+        switch (section) {
+            case "biografia":
+                contentSection.innerHTML = "<p>Conteúdo de biografia</p>";
+                biografia.classList.add('text-white');
+                break;
+            case "tecnologias":
+                contentSection.innerHTML = "<p>Conteúdo de tecnologias</p>";
+                tecnologias.classList.add('text-white');
+                break;
+            case "formacao":
+                contentSection.innerHTML = "<p>Conteúdo de formação</p>";
+                formacao.classList.add('text-white');
+                break;
+            case "kirei":
+                contentSection.innerHTML = "<p>Conteúdo de Kirei Cosméticos</p>";
+                kirei.classList.add('text-white');
+                break;
+            default:
+                contentSection.innerHTML = "<p>Conteúdo não encontrado</p>";
+        }
+    }
+    
+    document.querySelectorAll("[data-section]").forEach(item => {
+        item.addEventListener("click", loadContent);
+    });
 
 }
 
