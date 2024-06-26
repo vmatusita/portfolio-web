@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <script defer src="scripts/app.js"></script>
+    <title>_portfolio-vmatusita</title>
 </head>
 
-<body class="bg-customBg text-customGrey font-firaCode select-none md:select-auto">
+<body class="flex flex-col min-h-screen bg-customBg text-customGrey font-firaCode select-none md:select-auto">
+    
     <header class="border-b md:border-none border-customLine">
         <nav class="md:hidden">
             <ul class="flex justify-between items-center">
@@ -50,38 +52,40 @@
         </nav>
     </header>
     
-    <aside class="hidden min-h-screen w-full bg-customBg relative text-white md:text-customGrey" id="nav-bar">
-        <nav>
-            <ul class="flex flex-col mb-96">
-                <a href="index.html">
-                    <li class="border-b border-customLine p-18px">_bem-vindo</li>
-                </a>
-                <a href="about.html">
-                    <li class="border-b border-customLine p-18px">_sobre-mim</li>
-                </a>
-                <a href="projects.html">
-                    <li class="border-b border-customLine p-18px">_projetos</li>
-                </a>
-                <a href="contact.html">
-                    <li class="border-b border-customLine p-18px">_contato</li>
-                </a>
-            </ul>
-        </nav>
-    </aside>
-    
-    <section class="bg-[url('/assets/bg-blur-mobile.svg')] md:bg-none bg-center bg-origin-border bg-no-repeat bg-cover pt-24 pb-20" id="main">
-        <main class="m-27px">
-            <div class="mb-48">
-                <p class="text-lg text-customWhite mb-2.5">Olá, eu me chamo</p>
-                <p class="text-62px text-customWhite leading-none">Victor <br>Matusita</p>
-                <p class="text-xl text-customGreen mt-1.5">> Desenvolvedor Front-end</p>
-            </div>
-            <div class="text-sm">
-                <p>// meu perfil no Github:</p>
-                <p class="text-white font-medium"><span class="text-customPurple">const</span> <span class="text-customGreen">githubLink</span> = <a class="text-customOrange" href="https://github.com/vmatusita">"https://github.com/vmatusita"</a></p>
-            </div>
-        </main>
-    </section>
+    <div class="flex-grow">
+        <aside class="hidden min-h-screen w-full bg-customBg relative text-white md:text-customGrey" id="nav-bar">
+            <nav>
+                <ul class="flex flex-col mb-80">
+                    <a href="index.html">
+                        <li class="border-b border-customLine p-18px">_bem-vindo</li>
+                    </a>
+                    <a href="about.html">
+                        <li class="border-b border-customLine p-18px">_sobre-mim</li>
+                    </a>
+                    <a href="projects.html">
+                        <li class="border-b border-customLine p-18px">_projetos</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="border-b border-customLine p-18px">_contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
+        
+        <section class="bg-[url('/assets/bg-blur-mobile.svg')] md:bg-none bg-center bg-origin-border bg-no-repeat bg-cover pt-24 pb-20" id="main">
+            <main class="m-27px">
+                <div class="mb-48">
+                    <p class="text-lg text-customWhite mb-2.5">Olá, eu me chamo</p>
+                    <p class="text-62px text-customWhite leading-none">Victor <br>Matusita</p>
+                    <p class="text-xl text-customGreen mt-1.5">> Desenvolvedor Front-end</p>
+                </div>
+                <div class="text-sm">
+                    <p>// meu perfil no Github:</p>
+                    <p class="text-white font-medium"><span class="text-customPurple">const</span> <span class="text-customGreen">githubLink</span> = <a class="text-customOrange" href="https://github.com/vmatusita">"https://github.com/vmatusita"</a></p>
+                </div>
+            </main>
+        </section>
+    </div>
     
     <footer class="relative">
         <nav class="md:hidden">
@@ -119,6 +123,7 @@
             </ul>
         </nav>
     </footer>   
+
 </body>
 
 </html>

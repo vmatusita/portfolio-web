@@ -659,6 +659,10 @@ video {
   inset: -0.25rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -749,6 +753,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mb-80 {
+  margin-bottom: 20rem;
 }
 
 .box-border {

@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <script defer src="scripts/app.js"></script>
+    <title>_portfolio-vmatusita</title>
 </head>
 
-<body class="bg-customBg text-customGrey font-firaCode select-none md:select-auto">
+<body class="flex flex-col min-h-screen bg-customBg text-customGrey font-firaCode select-none md:select-auto">
+    
     <header class="border-b md:border-none border-customLine">
         <nav class="md:hidden">
             <ul class="flex justify-between items-center">
@@ -50,30 +52,31 @@
         </nav>
     </header>
     
-    <aside class="hidden min-h-screen w-full bg-customBg relative text-white md:text-customGrey" id="nav-bar">
-        <nav>
-            <ul class="flex flex-col mb-96">
-                <a href="index.html">
-                    <li class="border-b border-customLine p-18px">_bem-vindo</li>
-                </a>
-                <a href="about.html">
-                    <li class="border-b border-customLine p-18px">_sobre-mim</li>
-                </a>
-                <a href="projects.html">
-                    <li class="border-b border-customLine p-18px">_projetos</li>
-                </a>
-                <a href="contact.html">
-                    <li class="border-b border-customLine p-18px">_contato</li>
-                </a>
-            </ul>
-        </nav>
-    </aside>
-    
-    <section id="main">
-        <main class="m-27px">
-            
-        </main>
-    </section>
+    <div class="flex-grow">
+        <aside class="hidden min-h-screen w-full bg-customBg relative text-white md:text-customGrey" id="nav-bar">
+            <nav>
+                <ul class="flex flex-col mb-80">
+                    <a href="index.html">
+                        <li class="border-b border-customLine p-18px">_bem-vindo</li>
+                    </a>
+                    <a href="about.html">
+                        <li class="border-b border-customLine p-18px">_sobre-mim</li>
+                    </a>
+                    <a href="projects.html">
+                        <li class="border-b border-customLine p-18px">_projetos</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="border-b border-customLine p-18px">_contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
+        
+        <section id="main">
+            <main class="m-27px">
+            </main>
+        </section>
+    </div>
     
     <footer class="relative">
         <nav class="md:hidden">
@@ -111,6 +114,7 @@
             </ul>
         </nav>
     </footer>   
+
 </body>
 
 </html>
