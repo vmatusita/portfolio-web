@@ -50,19 +50,23 @@ window.onload = function() {
     
         switch (section) {
             case "biografia":
-                contentSection.innerHTML = "<p>Conteúdo de biografia</p>";
+                contentSection.innerHTML =  '<p><span class="text-white">// informações</span> / biografia</p>' +
+                '<p class="mt-4">Já trabalhei com Marketing, criando artes cativantes e envolventes para os clientes. Migrei para a área de programação, focando no desenvolvimento Front-end. Estou buscando aplicar meu aprendizado para contribuir no desenvolvimento de soluções inovadoras, além de desenvolver minha carreira e aprimorar minhas habilidades.</p>';
                 biografia.classList.add('text-white');
                 break;
             case "tecnologias":
-                contentSection.innerHTML = "<p>Conteúdo de tecnologias</p>";
+                contentSection.innerHTML = '<p><span class="text-white">// informações</span> / tecnologias</p>' +
+                '<p class="mt-4">Tenho experiência em HTML, CSS, Tailwind CSS e JavaScript para criar interfaces web modernas e responsivas.</p>';
                 tecnologias.classList.add('text-white');
                 break;
             case "formacao":
-                contentSection.innerHTML = "<p>Conteúdo de formação</p>";
+                contentSection.innerHTML = '<p><span class="text-white">// informações</span> / formação</p>' +
+                '<p class="mt-4">Estou cursando Engenharia de Software na UniCesumar desde janeiro de 2023.</p>';
                 formacao.classList.add('text-white');
                 break;
             case "kirei":
-                contentSection.innerHTML = "<p>Conteúdo de Kirei Cosméticos</p>";
+                contentSection.innerHTML = '<p><span class="text-white">// experiências</span> / Kirei Cosméticos</p>' +
+                '<p class="mt-4">Tenho experiência como Marketing na Kirei Cosméticos desde março de 2022, onde sou responsável pela criação de textos para campanhas publicitárias e legendas para redes sociais, atendimento ao cliente presencialmente e online, além da edição de vídeos e fotos utilizando Adobe Photoshop e Adobe Premiere.</p>';
                 kirei.classList.add('text-white');
                 break;
             default:
