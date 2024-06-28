@@ -12,7 +12,8 @@ function getApiGithub() {
                 let project = document.createElement('div')
                 let number = data.indexOf(item) + 1;
 
-                project.innerHTML = `
+                project.innerHTML = 
+                `
                 <div class="mb-5">
                     <p class="mb-4"><span class="text-customPurple font-bold">Projeto ${number}</span> / ${item.name}</p>
                     <div class="bg-customCode p-8 rounded-xl border border-customLine break-words">
@@ -22,8 +23,7 @@ function getApiGithub() {
                         <p class="mb-1"><span class="text-customOrange">Descrição:</span> ${item.description}</p>
                     </div>
                 </div>
-                `
-
+                `;
 
                 projectsContent.appendChild(project);
             })
