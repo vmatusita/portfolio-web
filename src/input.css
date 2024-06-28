@@ -19,3 +19,9 @@
   border-bottom: 2px solid #FEA55F; 
   border-top: none; 
 }
+
+@media (min-width: 768px) {
+  .blur-position {
+    background-position: calc(50% + 23rem);
+  }
+}
