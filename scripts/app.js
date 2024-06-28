@@ -11,6 +11,10 @@ let biografia = document.getElementById('biografia');
 let tecnologias = document.getElementById('tecnologias');
 let formacao = document.getElementById('formacao');
 let kirei = document.getElementById('kirei');
+let submitButton = document.getElementById('submit-button');
+let aceptMessage = document.getElementById('acept-message');
+let aceptButton = document.getElementById('acept-button');
+let forms = document.getElementById('forms');
 
 window.onload = function() {
     
@@ -79,4 +83,18 @@ window.onload = function() {
     });
 
 }
+
+submitButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    forms.classList.add('hidden');
+    aceptMessage.classList.remove('hidden');
+});
+
+aceptButton.addEventListener('click', function() {
+    aceptMessage.classList.add('hidden');
+    forms.classList.remove('hidden');
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('mensagem').value = '';
+});
 

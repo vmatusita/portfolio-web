@@ -13,6 +13,8 @@ module.exports = {
         'customLine': '#1E2D3D',
         'customWhite': '#E5E9F0',
         'customCode': '#011221',
+        'customButton': '#1C2B3A',
+        'customHoverButton': '#263B50',
       },
       fontSize: {
         '62px': '3.88rem'
