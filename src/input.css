@@ -20,8 +20,19 @@
   border-top: none; 
 }
 
+.centralizar-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+}
+
 @media (min-width: 768px) {
   .blur-position {
     background-position: calc(50% + 23rem);
+  }
+
+  .width-desktop {
+    width: calc(50% - 13.1rem);
   }
 }

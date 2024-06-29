@@ -73,45 +73,47 @@
         </aside>
         
         <section id="main">
-            <main>
-                <p class="mx-27px my-5 text-white text-sm">_contato</p>
-                <nav class="mb-10">
-                    <ul class="flex gap-1.5 bg-customLine py-1 text-white cursor-pointer" id="ul-about">
-                        <span class="ml-27px">
-                            <i class="ri-arrow-right-s-fill" id="ul-about-icon"></i>
-                        </span>
-                        <i class="ri-folder-3-fill"></i>
-                        <li>encontre-me-em</li> 
-                    </ul>
-                    <ul class="ml-16 mb-4 mt-4 hidden" id="ul-about-dados"> 
-                        <a href="https://github.com/vmatusita" target="_blank">
-                            <li class="flex gap-1.5 mb-0.5 hover-text">
-                                <i class="ri-external-link-line"></i>
-                                <p>Github</p>
-                            </li>
-                        </a>
-                        <a href="https://www.linkedin.com/in/victor-matusita-8b382a297/" target="_blank">
-                            <li class="flex gap-1.5 mb-0.5 hover-text">
-                                <i class="ri-external-link-line"></i>
-                                <p>LinkedIn</p>
-                            </li>
-                        </a>
-                        <a href="https://wa.link/fpqfr5" target="_blank">
-                            <li class="flex gap-1.5 mb-0.5 hover-text">
-                                <i class="ri-external-link-line"></i>
-                                <p>WhatsApp</p>
-                            </li>
-                        </a>
-                        <a href="https://www.instagram.com/victor_matusita/" target="_blank">
-                            <li class="flex gap-1.5 hover-text">
-                                <i class="ri-external-link-line"></i>
-                                <p>Instagram</p>
-                            </li>
-                        </a>
-                    </ul>
-                </nav>
+            <main class="md:flex md:h-90vh">
+                <div class="md:w-313px md:border-r border-customLine">
+                    <p class="mx-27px my-5 text-white text-sm">_contato</p>
+                    <nav class="mb-10">
+                        <ul class="flex gap-1.5 bg-customLine py-1 text-white cursor-pointer" id="ul-about">
+                            <span class="ml-27px">
+                                <i class="ri-arrow-right-s-fill" id="ul-about-icon"></i>
+                            </span>
+                            <i class="ri-folder-3-fill"></i>
+                            <li>encontre-me-em</li> 
+                        </ul>
+                        <ul class="ml-16 mb-4 mt-4 hidden" id="ul-about-dados"> 
+                            <a href="https://github.com/vmatusita" target="_blank">
+                                <li class="flex gap-1.5 mb-0.5 hover-text">
+                                    <i class="ri-external-link-line"></i>
+                                    <p>Github</p>
+                                </li>
+                            </a>
+                            <a href="https://www.linkedin.com/in/victor-matusita-8b382a297/" target="_blank">
+                                <li class="flex gap-1.5 mb-0.5 hover-text">
+                                    <i class="ri-external-link-line"></i>
+                                    <p>LinkedIn</p>
+                                </li>
+                            </a>
+                            <a href="https://wa.link/fpqfr5" target="_blank">
+                                <li class="flex gap-1.5 mb-0.5 hover-text">
+                                    <i class="ri-external-link-line"></i>
+                                    <p>WhatsApp</p>
+                                </li>
+                            </a>
+                            <a href="https://www.instagram.com/victor_matusita/" target="_blank">
+                                <li class="flex gap-1.5 hover-text">
+                                    <i class="ri-external-link-line"></i>
+                                    <p>Instagram</p>
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
                 
-                <div class="mx-27px mb-4" id="forms">
+                <div class="mx-27px md:m-0 md:px-10 md:py-18px mb-4 width-desktop md:border-r border-customLine" id="forms">
                     <form>
                         <p class="flex flex-col gap-2 mb-4">
                             <label for="nome">_nome:</label>
@@ -129,7 +131,7 @@
                     </form>
                 </div>
 
-                <div class="mx-27px text-center hidden" id="acept-message">
+                <div class="mx-27px md:m-0 md:px-10 md:py-18px width-desktop md:border-r border-customLine text-center hidden" id="acept-message">
                     <p class="text-white text-2xl mb-3">Obrigado! 🤘</p>
                     <p class="text-lg mb-5">Sua mensagem foi aceita. Você receberá uma resposta em breve!</p>
                     <button class="py-2.5 px-3.5 bg-customButton rounded-lg text-white text-sm md:hover:bg-customHoverButton transition-colors duration-100 ease-in-out mb-9" type="submit" id="acept-button">enviar-nova-mensagem</button>
