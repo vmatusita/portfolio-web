@@ -35,4 +35,8 @@
   .width-desktop {
     width: calc(50% - 13.1rem);
   }
+  
+  .width-desktop-projects {
+    width: calc(100% - 35.5rem);
+  }
 }
