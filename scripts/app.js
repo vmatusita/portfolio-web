@@ -100,12 +100,12 @@ aceptButton.addEventListener('click', function() {
 });
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    favicon.href = 'icon-light.png';
+    favicon.href = '/assets/icon-light.png';
 } else {
-    favicon.href = 'icon-dark.png';
+    favicon.href = '/assets/icon-dark.png';
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    favicon.href = e.matches ? 'icon-light.png' : 'icon-dark.png';
+    favicon.href = e.matches ? '/assets/icon-light.png' : '/assets/icon-dark.png';
 });
 
