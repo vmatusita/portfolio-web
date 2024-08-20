@@ -750,6 +750,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-18px {
+  margin-bottom: 1.100rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -991,6 +995,10 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .cursor-pointer {
@@ -2123,6 +2131,11 @@ video {
   padding: 2rem;
 }
 
+.px-27px {
+  padding-left: 1.69rem;
+  padding-right: 1.69rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2410,6 +2423,10 @@ video {
 .text-customWhite {
   --tw-text-opacity: 1;
   color: rgb(229 233 240 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
 }
 
 .text-white {
@@ -2934,6 +2951,11 @@ video {
     margin: 0px;
   }
 
+  .md\:mx-27px {
+    margin-left: 1.69rem;
+    margin-right: 1.69rem;
+  }
+
   .md\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
@@ -2944,13 +2966,20 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:mb-18px {
+    margin-bottom: 1.100rem;
   }
 
   .md\:mb-20 {
     margin-bottom: 5rem;
+  }
+
+  .md\:ml-12 {
+    margin-left: 3rem;
   }
 
   .md\:block {
@@ -2983,6 +3012,10 @@ video {
             user-select: auto;
   }
 
+  .md\:border-b {
+    border-bottom-width: 1px;
+  }
+
   .md\:border-l {
     border-left-width: 1px;
   }
@@ -2993,6 +3026,15 @@ video {
 
   .md\:border-none {
     border-style: none;
+  }
+
+  .md\:border-customLine {
+    --tw-border-opacity: 1;
+    border-color: rgb(30 45 61 / var(--tw-border-opacity));
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:bg-\[url\(\'\/assets\/bg-blur\.svg\'\)\] {
@@ -3008,9 +3050,24 @@ video {
     padding-right: 2.5rem;
   }
 
+  .md\:px-27px {
+    padding-left: 1.69rem;
+    padding-right: 1.69rem;
+  }
+
   .md\:py-18px {
     padding-top: 1.100rem;
     padding-bottom: 1.100rem;
+  }
+
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:py-2\.5 {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
   }
 
   .md\:pr-9 {
@@ -3020,6 +3077,11 @@ video {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-customGrey {
